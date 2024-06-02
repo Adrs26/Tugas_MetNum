@@ -35,8 +35,7 @@ plt.grid(True)
 # Tampilkan plot
 plt.show()
 
-predicted_Y = linear_regression(X)
-
 # Menghitung galat RMS
+predicted_Y = linear_regression(X)
 rms_error = np.sqrt(np.mean((Y - predicted_Y)**2))
 print("Galat RMS : ", rms_error)
